@@ -132,11 +132,7 @@
         <a href="/category/anime" class="{{ 'active' if current_tab == 'anime' else '' }}">หมวดอนิเมะ</a>
         <a href="/category/local" class="{{ 'active' if current_tab == 'local' else '' }}">ข่าวสารทั่วไป</a>
     </nav>
-
-    <div class="welcome-banner">
-        ระบบดึงข้อมูลอัตโนมัติด้วย Python และ SQL สำเร็จแล้ว!
-    </div>
-
+    
     <div class="container">
         {% for article in articles %}
         <article class="news-card">
