@@ -22,7 +22,7 @@ ALL_NEWS = [
         "category": "anime",
         "category_color": "#2ecc71",
         "detail": "ตัวละครเอกสุดน่ารักจากมังงะและอนิเมะเรื่อง SPY×FAMILY เธอเป็นเด็กหญิงวัยอนุบาลผู้มีพลังจิตอ่านใจคนได้ โดยเธอเป็นลูกบุญธรรมของ ลอยด์ ฟอร์เจอร์ และ ยอร์ ฟอร์เจอร์...",
-        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A4%E0%B8%B2%E0%B8%A2%C3%97%E0%B9%81%E0%B8%9F%E0%B8%A1%E0%B8%B4%E0%B8%A5%E0%B8%B5",
+        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B2%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2_%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C",
         "image_src": "https://lh3.googleusercontent.com/d/151TYWInHApCUrM0CCoLGihMkZXY62KDn"
     },
     {
@@ -32,7 +32,7 @@ ALL_NEWS = [
         "category": "local",
         "category_color": "#e67e22",
         "detail": "เป็นภาพยนตร์แอนิเมชันอเมริกัน แนววิทยาศาสตร์และตลก ผลิตโดยพิกซาร์แอนิเมชันสตูดิโอส์ สำหรับวอลต์ดิสนีย์พิกเชอส์ ออกฉายใน ค.ศ. 2026 กำกับโดยแดเนียล ชอง และเขียนบทโดยชองร่วมกับเจสซี แอนดรูส...",
-        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B9%80%E0%B8%9A%E0%B8%B4%E0%B8%A5%E0%B9%82%E0%B8%94%E0%B8%94",
+        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%94%E0%B8%94_%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%9A%E0%B8%B5%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C",
         "image_src": "https://lh3.googleusercontent.com/d/1BSe2W1RESnai7heMT0etmU8fbGWK1MyX"
 
     }
