@@ -130,7 +130,7 @@
     <nav>
         <a href="/" class="{{ 'active' if current_tab == 'all' else '' }}">หน้าหลักทั้งหมด</a>
         <a href="/category/anime" class="{{ 'active' if current_tab == 'anime' else '' }}">หมวดอนิเมะ</a>
-        <a href="/category/local" class="{{ 'active' if current_tab == 'local' else '' }}">ข่าวสารทั่วไป</a>
+        <a href="/category/local" class="{{ 'active' if current_tab == 'local' else '' }}">การ์ตูน</a>
     </nav>
     
     <div class="container">
@@ -139,7 +139,7 @@
             <img src="{{ article.image_src }}" alt="{{ article.title }}" class="news-image">
             <div class="news-content">
                 <span class="news-category" style="background-color: {{ article.category_color }};">
-                    {% if article.category == 'anime' %} อนิเมะ {% else %} ทั่วไป {% endif %}
+                    {% if article.category == 'anime' %} อนิเมะ {% else %} การ์ตูน {% endif %}
                 </span>
                 <h2 class="news-title">{{ article.title }}</h2>
                 <div class="news-date">โพสต์เมื่อ: {{ article.post_date }}</div>
