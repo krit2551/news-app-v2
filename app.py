@@ -35,6 +35,16 @@ ALL_NEWS = [
         "read_more_url": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%94%E0%B8%94_%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%9A%E0%B8%B5%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C",
         "image_src": "https://lh3.googleusercontent.com/d/1BSe2W1RESnai7heMT0etmU8fbGWK1MyX"
 
+    },
+    {
+        "id": 4,
+        "title": "ทอมแอนด์เจอร์รี่ (Tom & Jerry)",
+        "post_date": "18 มิถุนายน 2026",
+        "category": "local",
+        "category_color": "#e67e22",
+        "detail": "เป็นการ์ตูนชุดอเมริกันแนวตลกเจ็บตัว และเป็นสื่อแฟรนไชส์ของเมโทร-โกลด์วิน-เมเยอร์ ปัจจุบันย้ายมาสังกัด บริษัท เทอร์เนอร์เอ็นเตอร์เทนเมนต์...",
+        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%97%E0%B8%AD%E0%B8%A1%E0%B9%81%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A3%E0%B8%B5%E0%B9%88",
+        "image_src": "https://share.google/images/mLStes9aJzwcQzfqr"
     }
 ]
 
