@@ -44,7 +44,7 @@ ALL_NEWS = [
         "category_color": "#e67e22",
         "detail": "เป็นการ์ตูนชุดอเมริกันแนวตลกเจ็บตัว และเป็นสื่อแฟรนไชส์ของเมโทร-โกลด์วิน-เมเยอร์ ปัจจุบันย้ายมาสังกัด บริษัท เทอร์เนอร์เอ็นเตอร์เทนเมนต์...",
         "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%97%E0%B8%AD%E0%B8%A1%E0%B9%81%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A3%E0%B8%B5%E0%B9%88",
-        "image_src": "https://share.google/images/mLStes9aJzwcQzfqr"
+        "image_src": "https://lh3.googleusercontent.com/d/1Vp9tgyvoLOoINGfvyR9UfPbeeZCPdYpx"
     }
 ]
 
