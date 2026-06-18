@@ -12,7 +12,8 @@ ALL_NEWS = [
         "category_color": "#2ecc71",
         "detail": "เป็นซีรีส์หนังสือการ์ตูนของประเทศญี่ปุ่น เขียนเรื่องโดย โคโยฮารุ โกโตเกะ เนื้อหากล่าวถึงคามาโดะ ทันจิโร่ เด็กหนุ่มผู้กลายเป็นนักล่าอสูรหลังจากครอบครัวของตนถูกอสูรฆ่าตายทั้งหมด...",
         "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B2%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B8%B2%E0%B8%95%E0%B8%AD%E0%B8%AA%E0%B8%B9%E0%B8%A3",
-        "image_src": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500"
+        "image_src": "https://lh3.googleusercontent.com/d/1MqLDcJb0FeEj9W5DrWY83abMEVI9ZepW"
+
     },
     {
         "id": 2,
@@ -22,7 +23,7 @@ ALL_NEWS = [
         "category_color": "#2ecc71",
         "detail": "ตัวละครเอกสุดน่ารักจากมังงะและอนิเมะเรื่อง SPY×FAMILY เธอเป็นเด็กหญิงวัยอนุบาลผู้มีพลังจิตอ่านใจคนได้ โดยเธอเป็นลูกบุญธรรมของ ลอยด์ ฟอร์เจอร์ และ ยอร์ ฟอร์เจอร์...",
         "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A4%E0%B8%B2%E0%B8%A2%C3%97%E0%B9%81%E0%B8%9F%E0%B8%A1%E0%B8%B4%E0%B8%A5%E0%B8%B5",
-        "image_src": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500"
+        "image_src": "https://lh3.googleusercontent.com/d/151TYWInHApCUrM0CCoLGihMkZXY62KDn"
     },
     {
         "id": 3,
@@ -32,7 +33,8 @@ ALL_NEWS = [
         "category_color": "#e67e22",
         "detail": "เป็นภาพยนตร์แอนิเมชันอเมริกัน แนววิทยาศาสตร์และตลก ผลิตโดยพิกซาร์แอนิเมชันสตูดิโอส์ สำหรับวอลต์ดิสนีย์พิกเชอส์ ออกฉายใน ค.ศ. 2026 กำกับโดยแดเนียล ชอง และเขียนบทโดยชองร่วมกับเจสซี แอนดรูส...",
         "read_more_url": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B9%80%E0%B8%9A%E0%B8%B4%E0%B8%A5%E0%B9%82%E0%B8%94%E0%B8%94",
-        "image_src": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500"
+        "image_src": "https://lh3.googleusercontent.com/d/1BSe2W1RESnai7heMT0etmU8fbGWK1MyX"
+
     }
 ]
 
