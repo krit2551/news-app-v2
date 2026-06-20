@@ -32,7 +32,7 @@ ALL_NEWS = [
         "category_color": "#e67e22",
         "detail": "เป็นภาพยนตร์แอนิเมชันอเมริกัน แนววิทยาศาสตร์และตลก ผลิตโดยพิกซาร์แอนิเมชันสตูดิโอส์ สำหรับวอลต์ดิสนีย์พิกเชอส์ ออกฉายใน ค.ศ. 2026 กำกับโดยแดเนียล ชอง และเขียนบทโดยชองร่วมกับเจสซี แอนดรูส...",
         "read_more_url": "https://th.wikipedia.org/wiki/%E0%B\x9e%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%94%E0%B8%94_%E0%B\x9e%E0%B9%85%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B9%80%E0%B\x9e%E0%B9%85%E0%B8%99%E0%B8%9A%E0%B8%B5%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C",
-        "image_src": "https://lh3.googleusercontent.com/d/1BSe2W1RESnai7heMT0etmU8fbGWK1MyX"
+        "image_src": "https://lh3.googleusercontent.com/d/1-aB4D7ibjtKmHCdMMUi45r2BjKlB37A1"
     },
     {
         "id": 4,
