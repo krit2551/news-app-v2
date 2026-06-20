@@ -186,10 +186,10 @@
                     <h2>☕ สนับสนุนเว็บไซต์</h2>
                     <p style="font-size: 14px; color: #7f8c8d;">ร่วมสนับสนุนค่าโดเมนเนมและค่าเซิร์ฟเวอร์ในการพัฒนาเว็บ</p>
                     
-                    <div class="qr-box">
-                        <img src="{{ url_for('static', filename=support.qr_image) }}" alt="QR Code" style="width:100%; height:100%; object-fit:contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span style="display:none; padding: 10px;">[ ยังไม่มีไฟล์รูป {{ support.qr_image }} ในโฟลเดอร์ static ]</span>
-                    </div>
+             <div class="qr-box">
+    <img src="{{ support.qr_link }}" alt="QR Code" style="width:100%; height:100%; object-fit:contain;">
+</div>
+
                     
                     <p style="margin: 5px 0 0 0; font-weight: bold; color: #2c3e50;">พร้อมเพย์ (PromptPay)</p>
                     <p style="margin: 0; font-size: 16px; color: #3498db; font-weight: bold;">{{ support.promptpay }}</p>
