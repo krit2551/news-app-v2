@@ -45,13 +45,6 @@
             background-color: #3498db;
             color: white;
         }
-        .welcome-banner {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-        }
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -120,9 +113,7 @@
             margin-top: 40px;
         }
 
-        /* =================================================== */
-        /* [ส่วนที่เพิ่มใหม่ 1] CSS สำหรับแท็บติดต่อ & สนับสนุน       */
-        /* =================================================== */
+        /* CSS เพิ่มเติมสำหรับหน้าสนับสนุน */
         .support-card {
             background-color: white;
             border-radius: 8px;
@@ -159,6 +150,7 @@
             color: #7f8c8d;
             font-size: 12px;
             border: 1px dashed #bdc3c7;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -173,12 +165,40 @@
         <a href="/category/anime" class="{{ 'active' if current_tab == 'anime' else '' }}">อนิเมะ</a>
         <a href="/category/local" class="{{ 'active' if current_tab == 'local' else '' }}">การ์ตูน</a>
         
-        <a href="#" id="nav-support" onclick="switchTabToSupport(event)">ติดต่อ & สนับสนุน</a>
+        <a href="/support" class="{{ 'active' if current_tab == 'support' else '' }}">ติดต่อ & สนับสนุน</a>
     </nav>
     
     <div class="container">
         
-        <div id="articles-area">
+        {% if current_tab == 'support' %}
+        <div class="support-card">
+            <div class="support-grid">
+                
+                <div>
+                    <h2>✉️ ช่องทางการติดต่อ</h2>
+                    <p style="line-height: 1.6; color: #555;">หากคุณมีข้อเสนอแนะ พบข้อผิดพลาดบนเว็บไซต์ หรือต้องการติดต่องาน สามารถติดต่อผู้พัฒนาได้โดยตรงผ่านช่องทางเหล่านี้ครับ</p>
+                    <p style="margin-top: 20px;">
+                        <strong>📧 อีเมล:</strong> <a href="mailto:{{ support.email }}" style="color: #3498db; text-decoration: none;">{{ support.email }}</a>
+                    </p>
+                </div>
+                
+                <div style="text-align: center; border-left: 1px solid #f4f6f9; padding-left: 10px;">
+                    <h2>☕ สนับสนุนเว็บไซต์</h2>
+                    <p style="font-size: 14px; color: #7f8c8d;">ร่วมสนับสนุนค่าโดเมนเนมและค่าเซิร์ฟเวอร์ในการพัฒนาเว็บ</p>
+                    
+                    <div class="qr-box">
+                        <img src="{{ url_for('static', filename=support.qr_image) }}" alt="QR Code" style="width:100%; height:100%; object-fit:contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span style="display:none; padding: 10px;">[ ยังไม่มีไฟล์รูป {{ support.qr_image }} ในโฟลเดอร์ static ]</span>
+                    </div>
+                    
+                    <p style="margin: 5px 0 0 0; font-weight: bold; color: #2c3e50;">พร้อมเพย์ (PromptPay)</p>
+                    <p style="margin: 0; font-size: 16px; color: #3498db; font-weight: bold;">{{ support.promptpay }}</p>
+                </div>
+
+            </div>
+        </div>
+
+        {% else %}
             {% for article in articles %}
             <article class="news-card">
                 <img src="{{ article.image_src }}" alt="{{ article.title }}" class="news-image">
@@ -195,61 +215,12 @@
             {% else %}
             <p style="text-align: center; color: #7f8c8d; padding-top: 50px;">ไม่มีข้อมูลข่าวสารในหมวดหมู่นี้</p>
             {% endfor %}
-        </div>
-
-        <div id="support-area" style="display: none;">
-            <div class="support-card">
-                <div class="support-grid">
-                    
-                    <div>
-                        <h2>✉️ ช่องทางการติดต่อ</h2>
-                        <p style="line-height: 1.6; color: #555;">หากคุณมีข้อเสนอแนะ พบข้อผิดพลาดบนเว็บไซต์ หรือต้องการติดต่องาน สามารถติดต่อผู้พัฒนาได้โดยตรงผ่านช่องทางเหล่านี้ครับ</p>
-                        <p style="margin-top: 20px;">
-                            <strong>📧 อีเมล:</strong> <a href="mailto:your-email@example.com" style="color: #3498db; text-decoration: none;">your-email@example.com</a>
-                        </p>
-                    </div>
-                    
-                    <div style="text-align: center; border-left: 1px solid #f4f6f9; padding-left: 10px;">
-                        <h2>☕ สนับสนุนเว็บไซต์</h2>
-                        <p style="font-size: 14px; color: #7f8c8d;">ร่วมสนับสนุนค่าโดเมนเนมและค่าเซิร์ฟเวอร์ในการพัฒนาเว็บ</p>
-                        
-                        <div class="qr-box">
-                            <span>[ ใส่รูป QR Code ตรงนี้ ]</span>
-                        </div>
-                        
-                        <p style="margin: 5px 0 0 0; font-weight: bold; color: #2c3e50;">พร้อมเพย์ (PromptPay)</p>
-                        <p style="margin: 0; font-size: 16px; color: #3498db; font-weight: bold;">xxx-xxx-xxxx</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
+        {% endif %}
     </div>
 
     <footer>
         &copy; 2026 ANIME Portal System. All Rights Reserved.
     </footer>
-
-    <script>
-        function switchTabToSupport(event) {
-            // ป้องกันไม่ให้หน้าเว็บรีเฟรชใหม่จากแท็ก <a>
-            event.preventDefault(); 
-            
-            // ซ่อนกล่องบทความข่าวสาร และเปิดกล่องสนับสนุนขึ้นมาแสดงแทน
-            document.getElementById('articles-area').style.display = 'none';
-            document.getElementById('support-area').style.display = 'block';
-            
-            // เคลียร์ไฮไลท์สีฟ้าออกจากปุ่มอื่นๆ ใน Navbar ทั้งหมดก่อน
-            var navLinks = document.querySelectorAll('nav a');
-            navLinks.forEach(function(link) {
-                link.classList.remove('active');
-            });
-            
-            // เติมสีฟ้าไฮไลท์ให้กับแท็บ ติดต่อ & สนับสนุน
-            document.getElementById('nav-support').classList.add('active');
-        }
-    </script>
 
 </body>
 </html>
