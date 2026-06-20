@@ -119,6 +119,47 @@
             font-size: 12px;
             margin-top: 40px;
         }
+
+        /* =================================================== */
+        /* [ส่วนที่เพิ่มใหม่ 1] CSS สำหรับแท็บติดต่อ & สนับสนุน       */
+        /* =================================================== */
+        .support-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+        .support-card h2 {
+            margin: 0 0 15px 0;
+            font-size: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #f4f6f9;
+            padding-bottom: 8px;
+        }
+        .support-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        @media (min-width: 600px) {
+            .support-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .qr-box {
+            width: 180px;
+            height: 180px;
+            background-color: #eaeded;
+            margin: 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            color: #7f8c8d;
+            font-size: 12px;
+            border: 1px dashed #bdc3c7;
+        }
     </style>
 </head>
 <body>
@@ -131,30 +172,84 @@
         <a href="/" class="{{ 'active' if current_tab == 'all' else '' }}">หน้าหลักทั้งหมด</a>
         <a href="/category/anime" class="{{ 'active' if current_tab == 'anime' else '' }}">อนิเมะ</a>
         <a href="/category/local" class="{{ 'active' if current_tab == 'local' else '' }}">การ์ตูน</a>
+        
+        <a href="#" id="nav-support" onclick="switchTabToSupport(event)">ติดต่อ & สนับสนุน</a>
     </nav>
     
     <div class="container">
-        {% for article in articles %}
-        <article class="news-card">
-            <img src="{{ article.image_src }}" alt="{{ article.title }}" class="news-image">
-            <div class="news-content">
-                <span class="news-category" style="background-color: {{ article.category_color }};">
-                    {% if article.category == 'anime' %} อนิเมะ {% else %} การ์ตูน {% endif %}
-                </span>
-                <h2 class="news-title">{{ article.title }}</h2>
-                <div class="news-date">โพสต์เมื่อ: {{ article.post_date }}</div>
-                <p class="news-detail">{{ article.detail }}</p>
-                <a href="{{ article.read_more_url }}" class="read-more-btn" target="_blank">อ่านเพิ่มเติม →</a>
+        
+        <div id="articles-area">
+            {% for article in articles %}
+            <article class="news-card">
+                <img src="{{ article.image_src }}" alt="{{ article.title }}" class="news-image">
+                <div class="news-content">
+                    <span class="news-category" style="background-color: {{ article.category_color }};">
+                        {% if article.category == 'anime' %} อนิเมะ {% else %} การ์ตูน {% endif %}
+                    </span>
+                    <h2 class="news-title">{{ article.title }}</h2>
+                    <div class="news-date">โพสต์เมื่อ: {{ article.post_date }}</div>
+                    <p class="news-detail">{{ article.detail }}</p>
+                    <a href="{{ article.read_more_url }}" class="read-more-btn" target="_blank">อ่านเพิ่มเติม →</a>
+                </div>
+            </article>
+            {% else %}
+            <p style="text-align: center; color: #7f8c8d; padding-top: 50px;">ไม่มีข้อมูลข่าวสารในหมวดหมู่นี้</p>
+            {% endfor %}
+        </div>
+
+        <div id="support-area" style="display: none;">
+            <div class="support-card">
+                <div class="support-grid">
+                    
+                    <div>
+                        <h2>✉️ ช่องทางการติดต่อ</h2>
+                        <p style="line-height: 1.6; color: #555;">หากคุณมีข้อเสนอแนะ พบข้อผิดพลาดบนเว็บไซต์ หรือต้องการติดต่องาน สามารถติดต่อผู้พัฒนาได้โดยตรงผ่านช่องทางเหล่านี้ครับ</p>
+                        <p style="margin-top: 20px;">
+                            <strong>📧 อีเมล:</strong> <a href="mailto:your-email@example.com" style="color: #3498db; text-decoration: none;">your-email@example.com</a>
+                        </p>
+                    </div>
+                    
+                    <div style="text-align: center; border-left: 1px solid #f4f6f9; padding-left: 10px;">
+                        <h2>☕ สนับสนุนเว็บไซต์</h2>
+                        <p style="font-size: 14px; color: #7f8c8d;">ร่วมสนับสนุนค่าโดเมนเนมและค่าเซิร์ฟเวอร์ในการพัฒนาเว็บ</p>
+                        
+                        <div class="qr-box">
+                            <span>[ ใส่รูป QR Code ตรงนี้ ]</span>
+                        </div>
+                        
+                        <p style="margin: 5px 0 0 0; font-weight: bold; color: #2c3e50;">พร้อมเพย์ (PromptPay)</p>
+                        <p style="margin: 0; font-size: 16px; color: #3498db; font-weight: bold;">xxx-xxx-xxxx</p>
+                    </div>
+
+                </div>
             </div>
-        </article>
-        {% else %}
-        <p style="text-align: center; color: #7f8c8d; padding-top: 50px;">ไม่มีข้อมูลข่าวสารในหมวดหมู่นี้</p>
-        {% endfor %}
+        </div>
+
     </div>
 
     <footer>
         &copy; 2026 ANIME Portal System. All Rights Reserved.
     </footer>
+
+    <script>
+        function switchTabToSupport(event) {
+            // ป้องกันไม่ให้หน้าเว็บรีเฟรชใหม่จากแท็ก <a>
+            event.preventDefault(); 
+            
+            // ซ่อนกล่องบทความข่าวสาร และเปิดกล่องสนับสนุนขึ้นมาแสดงแทน
+            document.getElementById('articles-area').style.display = 'none';
+            document.getElementById('support-area').style.display = 'block';
+            
+            // เคลียร์ไฮไลท์สีฟ้าออกจากปุ่มอื่นๆ ใน Navbar ทั้งหมดก่อน
+            var navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+            
+            // เติมสีฟ้าไฮไลท์ให้กับแท็บ ติดต่อ & สนับสนุน
+            document.getElementById('nav-support').classList.add('active');
+        }
+    </script>
 
 </body>
 </html>
