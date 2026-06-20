@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# คลังข้อมูลข่าวสาร (เหมือนเราจำลองการดึงข้อมูลจาก SQL มาเก็บไว้ในตัวแปร Python)
+# คลังข้อมูลข่าวสารเดิมของคุณ
 ALL_NEWS = [
     {
         "id": 1,
@@ -13,7 +13,6 @@ ALL_NEWS = [
         "detail": "เป็นซีรีส์หนังสือการ์ตูนของประเทศญี่ปุ่น เขียนเรื่องโดย โคโยฮารุ โกโตเกะ เนื้อหากล่าวถึงคามาโดะ ทันจิโร่ เด็กหนุ่มผู้กลายเป็นนักล่าอสูรหลังจากครอบครัวของตนถูกอสูรฆ่าตายทั้งหมด...",
         "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B2%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B8%B2%E0%B8%95%E0%B8%AD%E0%B8%AA%E0%B8%B9%E0%B8%A3",
         "image_src": "https://lh3.googleusercontent.com/d/1MqLDcJb0FeEj9W5DrWY83abMEVI9ZepW"
-
     },
     {
         "id": 2,
@@ -34,7 +33,6 @@ ALL_NEWS = [
         "detail": "เป็นภาพยนตร์แอนิเมชันอเมริกัน แนววิทยาศาสตร์และตลก ผลิตโดยพิกซาร์แอนิเมชันสตูดิโอส์ สำหรับวอลต์ดิสนีย์พิกเชอส์ ออกฉายใน ค.ศ. 2026 กำกับโดยแดเนียล ชอง และเขียนบทโดยชองร่วมกับเจสซี แอนดรูส...",
         "read_more_url": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%87%E0%B9%82%E0%B8%94%E0%B8%94_%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%9A%E0%B8%B5%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C",
         "image_src": "https://lh3.googleusercontent.com/d/1BSe2W1RESnai7heMT0etmU8fbGWK1MyX"
-
     },
     {
         "id": 4,
@@ -48,16 +46,26 @@ ALL_NEWS = [
     }
 ]
 
+# [เพิ่มใหม่] ข้อมูลสนับสนุนและติดต่อ สามารถมาแก้ไขตรงนี้ใน Python ได้เลยครับ
+SUPPORT_INFO = {
+    "email": "your-email@example.com",
+    "promptpay": "xxx-xxx-xxxx",
+    "qr_image": "my-qr.png"  # ชื่อไฟล์รูป QR Code ที่จะเอาไปใส่ในโฟลเดอร์ static
+}
+
 @app.route('/')
 def home():
-    # หน้าแรกให้ส่งข่าวทั้งหมดไปแสดงผล
     return render_template('index.html', articles=ALL_NEWS, current_tab='all')
 
 @app.route('/category/<cat_name>')
 def category(cat_name):
-    # หน้าหมวดหมู่ ให้กรองเอาเฉพาะข่าวที่ตรงกับหมวดหมู่ที่กดเลือก
     filtered_news = [article for article in ALL_NEWS if article['category'] == cat_name]
     return render_template('index.html', articles=filtered_news, current_tab=cat_name)
+
+# [เพิ่มใหม่] Route สำหรับหน้าติดต่อ & สนับสนุนแยกออกมาโดยเฉพาะ
+@app.route('/support')
+def support():
+    return render_template('index.html', articles=[], current_tab='support', support=SUPPORT_INFO)
 
 if __name__ == '__main__':
     app.run(debug=True)
