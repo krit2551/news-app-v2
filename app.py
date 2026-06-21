@@ -11,7 +11,8 @@ ALL_NEWS = [
         "category": "anime",
         "category_color": "#2ecc71",
         "detail": "เป็นซีรีส์หนังสือการ์ตูนของประเทศญี่ปุ่น เขียนเรื่องโดย โคโยฮารุ โกโตเกะ เนื้อหากล่าวถึงคามาโดะ ทันจิโร่ เด็กหนุ่มผู้กลายเป็นนักล่าอสูรหลังจากครอบครัวของตนถูกอสูรฆ่าตายทั้งหมด...",
-        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B2%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B8%B2%E0%B8%95%E0%B8%AD%E0%B8%AA%E0%B8%B9%E0%B8%A3",
+        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B2%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%86%E0%B8%B2%E0%B8%95%E0%B8%AD%E0%B8%A5%E0%B8%B9%E0%B8%A3",
+        "custom_url": "https://discord.gg/9PAfy4T7",  # 👈 ลิงก์สำหรับปุ่มที่สอง (คุณดนัยเปลี่ยนลิงก์ปลายทางตรงนี้ได้ครับ)
         "image_src": "https://lh3.googleusercontent.com/d/1MqLDcJb0FeEj9W5DrWY83abMEVI9ZepW"
     },
     {
@@ -21,7 +22,8 @@ ALL_NEWS = [
         "category": "anime",
         "category_color": "#2ecc71",
         "detail": "ตัวละครเอกสุดน่ารักจากมังงะและอนิเมะเรื่อง SPY×FAMILY เธอเป็นเด็กหญิงวัยอนุบาลผู้มีพลังจิตอ่านใจคนได้ โดยเธอเป็นลูกบุญธรรมของ ลอยด์ ฟอร์เจอร์ และ ยอร์ ฟอร์เจอร์...",
-        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B2%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2_%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C",
+        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B|%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2_%E0%B8%9F%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C",
+        "custom_url": "https://discord.gg/9PAfy4T7",  # 👈 ลิงก์สำหรับปุ่มที่สอง
         "image_src": "https://lh3.googleusercontent.com/d/151TYWInHApCUrM0CCoLGihMkZXY62KDn"
     },
     {
@@ -31,7 +33,8 @@ ALL_NEWS = [
         "category": "local",
         "category_color": "#e67e22",
         "detail": "เป็นภาพยนตร์แอนิเมชันอเมริกัน แนววิทยาศาสตร์และตลก ผลิตโดยพิกซาร์แอนิเมชันสตูดิโอส์ สำหรับวอลต์ดิสนีย์พิกเชอส์ ออกฉายใน ค.ศ. 2026 กำกับโดยแดเนียล ชอง และเขียนบทโดยชองร่วมกับเจสซี แอนดรูส...",
-        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B\x9e%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%94%E0%B8%94_%E0%B\x9e%E0%B9%85%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B9%80%E0%B\x9e%E0%B9%85%E0%B8%99%E0%B8%9A%E0%B8%B5%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C",
+        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B%9e%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%94%E0%B8%94_%E0%B%9e%E0%B9%85%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B9%80%E0%B%9e%E0%B9%85%E0%B8%99%E0%B8%9A%E0%B8%B5%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C",
+        "custom_url": "https://discord.gg/9PAfy4T7",  # 👈 ลิงก์สำหรับปุ่มที่สอง
         "image_src": "https://lh3.googleusercontent.com/d/1-aB4D7ibjtKmHCdMMUi45r2BjKlB37A1"
     },
     {
@@ -41,16 +44,17 @@ ALL_NEWS = [
         "category": "local",
         "category_color": "#e67e22",
         "detail": "เป็นการ์ตูนชุดอเมริกันแนวตลกเจ็บตัว และเป็นสื่อแฟรนไชส์ของเมโทร-โกลด์วิน-เมเยอร์ ปัจจุบันย้ายมาสังกัด บริษัท เทอร์เนอร์เอ็นเตอร์เทนเมนต์...",
-        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%B7%E0%B8%AD%E0%B8%A1%E0%B9%81%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%A3%E0%B9%8C%E0%B8%A3%E0%B8%B5%E0%B9%88",
+        "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%B7%E0%B8%AD%E0%B9%81%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%A3%E0%B8%B5%E0%B9%88",
+        "custom_url": "https://discord.gg/9PAfy4T7",  # 👈 ลิงก์สำหรับปุ่มที่สอง
         "image_src": "https://lh3.googleusercontent.com/d/1Vp9tgyvoLOoINGfvyR9UfPbeeZCPdYpx"
     }
 ]
 
 # ส่วนข้อมูลติดต่อและลิงก์ QR Code จาก Google Drive ของคุณดนัย
 SUPPORT_INFO = {
-    "email": "kritdanai2551pm@gmail.com",  # 👈 ผมใส่อีเมลของคุณให้เรียบร้อยแล้วครับ
-    "promptpay": "063-116-2889",         # 👈 แก้เลขพร้อมเพย์ของคุณดนัยตรงนี้ได้เลย!
-    "qr_link": "https://drive.google.com/thumbnail?id=1_Cs8SfqmciI5SUZVT-j2NFU4LG20cwZn&sz=w600" # 👈 ลิงก์ตรงของรูปภาพ
+    "discord_link": "https://discord.gg/9PAfy4T7",  # 👈 เปลี่ยนจาก email เป็น discord_link แล้วครับ
+    "promptpay": "063-116-2889",
+    "qr_link": "https://drive.google.com/thumbnail?id=1_Cs8SfqmciI5SUZVT-j2NFU4LG20cwZn&sz=w600"
 }
 
 @app.route('/')
@@ -65,6 +69,3 @@ def category(cat_name):
 @app.route('/support')
 def support():
     return render_template('index.html', articles=[], current_tab='support', support=SUPPORT_INFO)
-
-if __name__ == '__main__':
-    app.run(debug=True)
