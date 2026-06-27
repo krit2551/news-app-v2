@@ -1,8 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 
 app = Flask(__name__)
 
-# คลังข้อมูลข่าวสารของคุณดนัย (ครบทั้ง 4 เรื่องแล้วครับ)
+# คลังข้อมูลข่าวสารของคุณดนัย
 ALL_NEWS = [
     {
         "id": 1,
@@ -46,7 +46,6 @@ ALL_NEWS = [
     }
 ]
 
-# ส่วนข้อมูลติดต่อสำหรับหน้าสนับสนุน (ใช้ลิงก์ดิสคอร์ด)
 SUPPORT_INFO = {
     "discord_link": "https://discord.gg/9PAfy4T7",
     "promptpay": "063-116-2889",
@@ -65,6 +64,21 @@ def category(cat_name):
 @app.route('/support')
 def support():
     return render_template('index.html', articles=[], current_tab='support', support=SUPPORT_INFO)
+
+
+# ===== เพิ่ม Route สำหรับหน้าอ่านเนื้อหาแยกตรงนี้ครับ =====
+@app.route('/article/<int:article_id>')
+def article_detail(article_id):
+    # วนลูปค้นหาบทความใน ALL_NEWS ที่มี id ตรงกับตัวเลขบน URL
+    article = next((item for item in ALL_NEWS if item["id"] == article_id), None)
+    
+    # ถ้าไม่พบบทความ (เช่นใส่ id มั่วมา) ให้ส่งหน้า Error 404 ไป
+    if article is None:
+        abort(404)
+        
+    # ส่งข้อมูลตัวแปรชื่อ article ไปที่หน้า detail.html
+    return render_template('detail.html', article=article)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
