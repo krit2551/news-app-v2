@@ -206,7 +206,7 @@
                     <div class="news-date">โพสต์เมื่อ: {{ article.post_date }}</div>
                     <p class="news-detail">{{ article.detail }}</p>
                     
-                    <a href="{{ article.read_more_url }}" class="read-more-btn" target="_blank">อ่านเพิ่มเติม →</a>
+                   <a href="{{ url_for('article_detail', article_id=article.id) }}" class="read-more-btn">อ่านเพิ่มเติม →</a>
                 </div>
             </article>
             {% else %}
