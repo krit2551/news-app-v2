@@ -50,7 +50,7 @@ ALL_NEWS = [
         "full_detail": "ทอมแอนด์เจอร์รี่ เป็นวลีที่ใช้กันทั่วไปสำหรับชายหนุ่มที่ชอบดื่ม เล่นการพนัน และใช้ชีวิตวุ่นวายในกรุงลอนดอน ประเทศอังกฤษ ในช่วงศตวรรษที่ 19 คำนี้มาจากชีวิตในลอนดอน หรือฉากกลางวันและกลางคืนของ เจอร์รี่ ฮอว์ธอร์น เอสคิว และเพื่อนที่สง่างามของเขา โครินเธียน ทอม (1821) โดย เพียร์ซ อีแกน นักข่าวกีฬาชาวอังกฤษผู้ประพันธ์เรื่องราวที่คล้ายกันซึ่งรวบรวมในชื่อ เบ็อกเซียนา[7] อย่างไรก็ตาม บรูเออร์ไม่ได้ตั้งข้อสังเกตอะไรมากไปกว่าเสียงสะท้อนของยุครีเจนซี่ (และยุคจอร์เจียน) ดั้งเดิมในการตั้งชื่อการ์ตูน",
         "watch_url": "https://m.youtube.com/playlist?list=PLJYf0JdTApCqAbZImkQagXEuByh-b_7To&fbclid=IwVERDUASsRzlleHRuA2FlbQIxMABzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR6lHWvQ7B7_lvdCtVNJfC8pCxu-sSeIOYGuQsRE3p3zevVF20UTa10OKaJhMg_aem_3JNd9eOKhyYtRUhtqSE3jg",
         "read_more_url": "https://th.wikipedia.org/wiki/%E0%B8%B7%E0%B8%AD%E0%B9%81%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%A3%E0%B8%B5%E0%B9%88",
-        "image_src": "https://lh3.googleusercontent.com/d/1Vp9tgyvoLOoINGfvyR9UfPbeeZCPdYpx"
+        "image_src": "https://lh3.googleusercontent.com/d/10OEtgBkV2aNLlpc3Ha-fjNA14L3mWWbP"
      },
     {
         "id": 5,
