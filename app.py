@@ -29,7 +29,7 @@ ALL_NEWS = [
         "image_src": "https://lh3.googleusercontent.com/d/11t0iBxBpaTQr25AaNtXI2mm9gNUUv-fa"
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "เด้งโดด เปลี่ยนโหมดเป็นบีเวอร์ (Hoppers)",
         "post_date": "5 มิถุนายน 2026",
         "category": "local",
@@ -53,7 +53,7 @@ ALL_NEWS = [
         "image_src": "https://lh3.googleusercontent.com/d/10OEtgBkV2aNLlpc3Ha-fjNA14L3mWWbP"
      },
     {
-        "id": 5,
+        "id": 3,
         "title": "วันพีซ (ワンピース) (One Piece)",
         "post_date": "27 มิถุนายน 2026",
         "category": "local",
